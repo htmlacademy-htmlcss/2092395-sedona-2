@@ -1443,6 +1443,16 @@ color: inherit;
   color: rgba(117, 97, 87, 0.3);
   top: 14px;
   z-index: 1;
+  cursor: pointer;
+}
+
+.count-button::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  right: -10px;
+  bottom: -14px;
+  left: -10px;
 }
 
 .count-button-minus {
@@ -1459,10 +1469,12 @@ color: inherit;
 
 .count-button:focus-visible {
   outline: 3px solid #83b3d3;
+  color: #000000;
 }
 
 .count-button:active {
   outline: none;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .tooltip {
